@@ -1,4 +1,4 @@
-package br.com.uolhost.application.dto;
+package br.com.uolhost.application.dto.external;
 
 import javax.xml.bind.annotation.XmlValue;
 

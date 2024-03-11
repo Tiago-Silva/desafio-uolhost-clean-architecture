@@ -1,6 +1,4 @@
-package br.com.uolhost.application.dto;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
+package br.com.uolhost.application.dto.external;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;

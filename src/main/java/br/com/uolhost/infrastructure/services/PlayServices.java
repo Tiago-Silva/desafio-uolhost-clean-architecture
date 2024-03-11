@@ -1,14 +1,13 @@
 package br.com.uolhost.infrastructure.services;
 
-import br.com.uolhost.application.dto.CodinomeDTO;
-import br.com.uolhost.application.dto.LigaResponseDTO;
-import br.com.uolhost.application.dto.VingadorDTO;
-import br.com.uolhost.application.dto.VingadoresResponseDTO;
+import br.com.uolhost.application.dto.external.CodinomeDTO;
+import br.com.uolhost.application.dto.external.LigaResponseDTO;
+import br.com.uolhost.application.dto.external.VingadorDTO;
+import br.com.uolhost.application.dto.external.VingadoresResponseDTO;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.AbstractHttpMessageConverter;
-import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.http.converter.xml.MappingJackson2XmlHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;

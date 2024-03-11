@@ -1,20 +1,12 @@
 package br.com.uolhost.infrastructure.gateways;
 
-import br.com.uolhost.application.dto.VingadoresResponseDTO;
 import br.com.uolhost.application.gateways.PlayGateway;
 import br.com.uolhost.domain.entity.Jogadores;
 import br.com.uolhost.infrastructure.db.entityDB.JogadoresEntity;
 import br.com.uolhost.infrastructure.db.repositories.JogadoresRepository;
 import br.com.uolhost.infrastructure.services.PlayServices;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
-import org.springframework.web.client.RestTemplate;
 
-import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
 
 public class PlayRepositoryGateway implements PlayGateway {
 
