@@ -7,5 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface JogadoresRepository extends JpaRepository<JogadoresEntity, String> {
-    List<Jogadores> findByCodinome(String codinome);
+    JogadoresEntity findByCodinome(String codinome);
+
+    List<JogadoresEntity> findByGrupo(String grupo);
 }

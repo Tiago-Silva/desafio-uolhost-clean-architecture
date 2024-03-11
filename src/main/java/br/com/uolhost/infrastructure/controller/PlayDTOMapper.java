@@ -19,4 +19,7 @@ public class PlayDTOMapper {
     public Jogadores toDomainObject(JogadoresRequestDTO requestDTO) {
         return new Jogadores(requestDTO);
     }
+    public Jogadores toDomainObject(JogadoresResponseDTO responseDTO) {
+        return new Jogadores(responseDTO);
+    }
 }

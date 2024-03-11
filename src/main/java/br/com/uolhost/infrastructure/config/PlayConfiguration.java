@@ -6,6 +6,7 @@ import br.com.uolhost.infrastructure.controller.PlayDTOMapper;
 import br.com.uolhost.infrastructure.db.repositories.JogadoresRepository;
 import br.com.uolhost.infrastructure.gateways.PlayEntityMapper;
 import br.com.uolhost.infrastructure.gateways.PlayRepositoryGateway;
+import br.com.uolhost.infrastructure.services.PlayServices;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -18,8 +19,8 @@ public class PlayConfiguration {
     }
 
     @Bean
-    PlayGateway playGateway(JogadoresRepository playRepository, PlayEntityMapper playEntityMapper) {
-        return new PlayRepositoryGateway(playRepository, playEntityMapper);
+    PlayGateway playGateway(JogadoresRepository playRepository, PlayEntityMapper playEntityMapper, PlayServices playServices) {
+        return new PlayRepositoryGateway(playRepository, playEntityMapper, playServices);
     }
 
     @Bean
@@ -30,5 +31,10 @@ public class PlayConfiguration {
     @Bean
     PlayDTOMapper playDTOMapper() {
         return new PlayDTOMapper();
+    }
+
+    @Bean
+    PlayServices playServices() {
+        return new PlayServices();
     }
 }
